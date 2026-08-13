@@ -12,7 +12,7 @@ class App(BaseHTTPRequestHandler):
 
         response = f"""
         <h1>{APP_NAME}</h1>
-        <p>{APP_MESSAGE}</p>
+        <p>{APP_MESSAGE} version 2</p>
         """
 
         self.wfile.write(response.encode())
