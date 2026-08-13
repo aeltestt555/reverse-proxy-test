@@ -15,7 +15,7 @@ class App(BaseHTTPRequestHandler):
         <p>{APP_MESSAGE} version  2 deploi </p>
         """
 
-gg        self.wfile.write(response.encode())
+        self.wfile.write(response.encode())
 # this is broken
 HTTPServer(("127.0.0.1", 8000), App).serve_forever()
-hhh
+
