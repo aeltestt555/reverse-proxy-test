@@ -16,5 +16,5 @@ class App(BaseHTTPRequestHandler):
         """
 
         self.wfile.write(response.encode())
-this is broken
+# this is broken
 HTTPServer(("127.0.0.1", 8000), App).serve_forever()
