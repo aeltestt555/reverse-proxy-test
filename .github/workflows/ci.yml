@@ -16,3 +16,6 @@ jobs:
 
       - name: Check app syntax
         run: python3 -m py_compile app.py
+
+      - name: Run tests
+        run: python3 -m unittest discover
