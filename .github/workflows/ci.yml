@@ -1,0 +1,18 @@
+name: Python CI
+
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get code
+        uses: actions/checkout@v4
+
+      - name: Check Python
+        run: python3 --version
+
+      - name: Check app syntax
+        run: python3 -m py_compile app.py
