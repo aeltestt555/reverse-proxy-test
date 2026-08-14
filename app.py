@@ -13,6 +13,7 @@ class App(BaseHTTPRequestHandler):
         response = f"""
         <h1>{APP_NAME}</h1>
         <p>{APP_MESSAGE} version  2 deploi </p>
+  <p>This feature was developed on a separate branch.</p>
         """
 
         self.wfile.write(response.encode())
